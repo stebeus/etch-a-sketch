@@ -11,5 +11,5 @@ for (let i = 0; i < gridNum; i++) {
 }
 
 canvas.addEventListener("mouseover", (e) => {
-  e.target.classList.add("canvas__pixel--colored");
+  e.target.style.background = "blue";
 });

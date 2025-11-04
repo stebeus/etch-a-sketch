@@ -71,7 +71,3 @@ main {
   outline: 1px solid var(--clr-border);
   background-color: var(--clr-fg);
 }
-
-.canvas__pixel--colored {
-  background-color: blue;
-}
