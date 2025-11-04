@@ -37,3 +37,21 @@ video {
   display: block;
   max-width: 100%;
 }
+
+main {
+  margin: 1rem auto;
+  max-width: 640px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.container__div-pixel {
+  width: 40px;
+  height: 40px;
+  outline: 1px solid hsl(0deg 0% 75%);
+  background-color: hsl(0deg 0% 95%);
+}
