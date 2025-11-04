@@ -23,6 +23,11 @@ html {
   color-scheme: light dark;
 }
 
+body {
+  color: hsl(0 0 5%);
+  font-family: monospace;
+}
+
 /* Media */
 
 canvas,
