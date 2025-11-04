@@ -9,3 +9,7 @@ let gridNum = 16 ** 2;
 for (let i = 0; i < gridNum; i++) {
   canvas.appendChild(divPixel.cloneNode());
 }
+
+canvas.addEventListener("mouseover", (e) => {
+  e.target.classList.add("canvas__pixel--colored");
+});
