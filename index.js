@@ -10,7 +10,7 @@ for (let i = 0; i < gridNum; i++) {
   canvas.appendChild(divPixel.cloneNode());
 }
 
-let color = "blue";
+let color = "gray";
 
 canvas.addEventListener("mouseover", (e) => {
   e.target.style.background = color;
