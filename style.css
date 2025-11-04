@@ -57,13 +57,13 @@ main {
   max-width: 640px;
 }
 
-.container {
+.canvas {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 
-.container__div-pixel {
+.canvas__pixel {
   width: 40px;
   height: 40px;
   outline: 1px solid var(--clr-border);

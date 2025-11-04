@@ -1,9 +1,9 @@
 "use strict";
 
-const container = document.querySelector(".container");
+const canvas = document.querySelector(".canvas");
 const divPixel = document.createElement("div");
-divPixel.classList.add("container__div-pixel");
+divPixel.classList.add("canvas__pixel");
 
-for (let i = 0; i < 16; i++) {
-  container.appendChild(divPixel.cloneNode());
+for (let i = 0; i < 256; i++) {
+  canvas.appendChild(divPixel.cloneNode());
 }
