@@ -11,7 +11,7 @@
 :root {
   --clr-bg: hsl(0deg 0% 90%);
   --clr-fg: hsl(0deg 0% 95%);
-  --clr-border: hsl(0deg 0% 75%);
+  --clr-border: hsl(0deg 0% 5%);
   --clr-content: hsl(0deg 0% 5%);
 }
 
@@ -19,7 +19,6 @@
   :root {
     --clr-bg: hsl(0deg 0% 15%);
     --clr-fg: hsl(0deg 0% 20%);
-    --clr-border: hsl(0deg 0% 5%);
     --clr-content: hsl(0deg 0% 95%);
   }
 }
