@@ -41,9 +41,15 @@ function resetCanvasGrid() {
   setCanvasGrid();
 }
 
-let color = "gray";
-
 function colorDivPixel(e) {
+  const colorList = document.querySelector("#colors");
+
+  colorList.addEventListener("change", () => {
+    colorList.value;
+  });
+
+  let color = colorList.value;
+
   e.target.style.background = color;
 }
 
