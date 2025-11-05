@@ -9,14 +9,20 @@ const btnClearCanvas = document.querySelector("[data-action='clear-canvas']");
 
 divPixel.classList.add("canvas__pixel");
 
-let gridNum = 16 ** 2;
+function setCanvasGrid(gridNum = 16) {
+  const gridFactor = gridNum ** 2;
 
-for (let i = 0; i < gridNum; i++) {
-  canvas.appendChild(divPixel.cloneNode());
+  for (let i = 0; i < gridFactor; i++) {
+    canvas.appendChild(divPixel.cloneNode());
+  }
 }
+
+setCanvasGrid();
 
 let color = "gray";
 
-canvas.addEventListener("mouseover", (e) => {
+function colorDivPixel(e) {
   e.target.style.background = color;
-});
+}
+
+canvas.addEventListener("mouseover", colorDivPixel);
