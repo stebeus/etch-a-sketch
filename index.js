@@ -19,7 +19,7 @@ function setCanvasGrid(gridNum = 16) {
 setCanvasGrid();
 
 function setNewCanvasGrid() {
-  let gridNewNum = prompt("Inset new grid number (1–32)");
+  let gridNewNum = prompt("Insert new grid number (1–32)");
 
   if (gridNewNum > 32) {
     alert("The inserted number is too big. Input another value");
