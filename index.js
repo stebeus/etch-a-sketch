@@ -2,7 +2,6 @@
 
 const canvas = document.querySelector(".canvas");
 const divPixel = document.createElement("div");
-
 const btnSetGrid = document.querySelector("[data-action='set-grid']");
 const btnResetGrid = document.querySelector("[data-action='reset-grid']");
 
@@ -54,6 +53,5 @@ function colorDivPixel(e) {
 }
 
 canvas.addEventListener("mouseover", colorDivPixel);
-
 btnSetGrid.addEventListener("click", setNewCanvasGrid);
 btnResetGrid.addEventListener("click", resetCanvasGrid);
