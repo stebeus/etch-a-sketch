@@ -9,6 +9,11 @@ const btnResetGrid = document.querySelector("[data-action='reset-grid']");
 divPixel.classList.add("canvas__pixel");
 
 function setCanvasGrid(gridNum = 16) {
+  let divSquareSize = 640 / gridNum;
+
+  divPixel.style.width = `${divSquareSize}px`;
+  divPixel.style.height = `${divSquareSize}px`;
+
   const gridFactor = gridNum ** 2;
 
   for (let i = 0; i < gridFactor; i++) {
