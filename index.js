@@ -19,6 +19,24 @@ function setCanvasGrid(gridNum = 16) {
 
 setCanvasGrid();
 
+function setNewCanvasGrid() {
+  let gridNewNum = prompt("Inset new grid number (1–32)");
+
+  if (gridNewNum > 32) {
+    alert("The inserted number is too big. Input another value");
+  } else if (gridNewNum < 1) {
+    alert("The inserted number is smaller than 1. Input another value");
+  } else {
+    canvas.innerHTML = "";
+    setCanvasGrid(gridNewNum);
+  }
+}
+
+function resetCanvasGrid() {
+  canvas.innerHTML = "";
+  setCanvasGrid();
+}
+
 let color = "gray";
 
 function colorDivPixel(e) {
@@ -26,3 +44,6 @@ function colorDivPixel(e) {
 }
 
 canvas.addEventListener("mouseover", colorDivPixel);
+
+btnSetGrid.addEventListener("click", setNewCanvasGrid);
+btnResetGrid.addEventListener("click", resetCanvasGrid);
