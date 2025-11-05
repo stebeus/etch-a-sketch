@@ -89,8 +89,6 @@ button:hover {
 }
 
 .canvas__pixel {
-  width: 40px;
-  height: 40px;
   outline: 1px solid var(--clr-border);
   background-color: var(--clr-base-secondary);
 }
